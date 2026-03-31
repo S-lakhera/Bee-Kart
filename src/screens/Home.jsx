@@ -6,7 +6,7 @@ const Home = () => {
     <div className="bg-[#121116] text-white min-h-screen font-sans selection:bg-yellow-500 selection:text-black">
       
       {/* 1. HERO SECTION */}
-      <section className="relative pt-20 pb-32 px-6 overflow-hidden">
+      <section className="relative pt-5 pb-32 px-6 overflow-hidden">
         {/* Ambient Glow background */}
         <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-yellow-500/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-[20%] left-[-5%] w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px]" />
@@ -21,7 +21,7 @@ const Home = () => {
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8">
             STAY <span className="text-yellow-500 italic">SHARP.</span> <br />
             SHOP <span className="underline underline-offset-8 decoration-yellow-500/40">SMART.</span>
-          </h1>
+          </h1> 
           
           <p className="text-slate-400 max-w-2xl mx-auto text-lg md:text-xl mb-10 leading-relaxed">
             Experience the next generation of digital commerce. Premium curated products 
