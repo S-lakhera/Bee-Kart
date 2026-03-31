@@ -6,6 +6,7 @@ import About from '../screens/About'
 import Cart from '../screens/Cart'
 import Login from '../components/Login'
 import Register from '../components/Register'
+import AuthLayout from '../screens/AuthLayout'
 
 const AppRoute = () => {
     return (
@@ -14,9 +15,9 @@ const AppRoute = () => {
             <Route path='/products' element={<Products />} />
             <Route path='/about' element={<About />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/auth' >
-                <Route path='' index element={<Login/>}/>
-                {/* <Route path='/register' element={<Register/>}/> */}
+            <Route path='/auth' element={<AuthLayout/>} >
+                <Route index element={<Login/>}/>
+                <Route path='register' element={<Register/>}/>
             </Route>
         </Routes>
     )

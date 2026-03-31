@@ -7,8 +7,10 @@ const App = () => {
   return (
     <div className='h-screen w-full'>
       <Navbar />
-      <AppRoute/>
-      <Footer/>
+      <div className='p-2 md:p-5'>
+        <AppRoute />
+      </div>
+      <Footer />
     </div>
   )
 }

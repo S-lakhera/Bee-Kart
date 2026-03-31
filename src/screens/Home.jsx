@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Home = () => {
   return (
@@ -28,12 +29,12 @@ const Home = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="px-10 py-4 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(234,179,8,0.3)]">
+            <Link to={"/products"} className="cursor-pointer px-10 py-4 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(234,179,8,0.3)]">
               Explore Collection
-            </button>
-            <button className="px-10 py-4 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl font-bold hover:bg-white/10 transition-all">
+            </Link>
+            <Link to={"/products"} className="cursor-pointer px-10 py-4 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl font-bold hover:bg-white/10 transition-all">
               View Deals
-            </button>
+            </Link>
           </div>
         </div>
       </section>
